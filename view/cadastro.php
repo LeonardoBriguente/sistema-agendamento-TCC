@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/cadastro.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/cadastro.css">
     <script type="text/javascript" src="./assets/javascript/cadastro.js" defer></script>
     <script src="https://kit.fontawesome.com/553722128b.js" crossorigin="anonymous"></script>
     <title>Cadastro</title>
