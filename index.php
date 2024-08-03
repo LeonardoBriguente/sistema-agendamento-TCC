@@ -10,6 +10,7 @@
     <section class="body">
         <main>
             <section class="welcome">
+                <!-- Colocar logo do Studio, confirmar detalhes da logo, como fundo e espaço em branco se podem ser alterados ou dominuidos -->
                 <p class="text-welcome">Bem vindo ao Stima Studio</p>
             </section>
 
