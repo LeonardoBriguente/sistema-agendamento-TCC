@@ -27,7 +27,7 @@ div.box{
     box-shadow: 0 0 5px black;
 }
 
-img.seta{
+.seta{
     width: 25px;
     margin-top: 1em;
     position: absolute;
