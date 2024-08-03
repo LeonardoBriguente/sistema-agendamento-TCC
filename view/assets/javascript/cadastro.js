@@ -1,70 +1,92 @@
-const allInputs = document.querySelectorAll('input');
+class FormActions{
+    constructor(){
+        this.inputs = document.querySelectorAll('input');
+        this.eye = document.getElementById('icone');
+        this.passwordInput = document.getElementById('inputPassword');
+        this.reviewPassInput = document.getElementById('review-password');
+        this.alertMessege = document.getElementById('aviso');
 
-for(let i = 0; i < allInputs.length; i++){
-    allInputs[i].addEventListener('focus', function(){
-       this.style.backgroundColor = "";
-    })
-}
-
-function ShowPassword(){
-    let eye = document.getElementById('icone');
-    let dataInput = document.getElementById('inputPassword');
-    let confirmarSenha = document.getElementById('review-password');
-
-    if(dataInput.type === 'password'){
-        dataInput.type = 'text';
-        confirmarSenha.type = 'text';
-        eye.src = '../imagens/olho-aberto.png';
+        this.addFocusListeners();
+        this.addEyeListener();
     }
 
-    else{
-        dataInput.type = 'password';
-        confirmarSenha.type = 'password';
-        eye.src = '../imagens/olho-fechado.png';
+    addFocusListeners(){
+        this.inputs.forEach(input => {
+            input.addEventListener('focus', function(){
+                this.style.backgroundColor = "";
+            });
+        });
     }
-}
 
-function VerifyAllInputs(){
-    let inputs = document.getElementsByTagName('input');
-    let verifyComplete = true;
-
-    for(let i = 0; i < inputs.length; i++){
-        if(inputs[i].value === ''){
-            inputs[i].style.backgroundColor = "rgba(33, 106, 86, 0.2)";
-            inputs[i].style.borderBottomColor = "#216A56";
-            verifyComplete = false;
+    addEyeListener(){
+        this.eye.addEventListener('click', () => this.ShowPassword());
+    }
+    
+    ShowPassword(){
+        if(this.passwordInput.type == "password"){
+            this.passwordInput.type = "text";
+            this.reviewPassInput.type = "text";
+            this.eye.src = "../imagens/olho-aberto.png";
+        }
+        else{
+            this.passwordInput.type = "password";
+            this.reviewPassInput.type = "password";
+            this.eye.src = "../imagens/olho-fechado.png";
         }
     }
-    return verifyComplete;
-}
 
-function VerifyPasswords(){
-    let passwordInput = document.getElementById('inputPassword').value;
-    // let passwordValue = passwordInput.value;
-    let reviewPasswordInput = document.getElementById('review-password')
-    let review = reviewPasswordInput.value;
+    VerifyAllInputs() {
+        let verifyComplete = true;
 
-    let alert = document.getElementById('aviso');
+        this.inputs.forEach(input => {
+            if (input.value.trim() === '') {
+                input.style.backgroundColor = "rgba(33, 106, 86, 0.2)";
+                input.style.borderBottomColor = "#216A56";
+                verifyComplete = false;
+            }
+        });
 
-    if (passwordInput != review){
-        alert.style.display = "block";
-        reviewPasswordInput.style.backgroundColor = "rgba(33, 106, 86, 0.2)";
-        reviewPasswordInput.style.borderBottomColor = "#216A56";
-        return false;      
+        console.log(verifyComplete);
+        return verifyComplete;
     }
-    else{
+
+    VerifyPasswords() {
+
+        //console de teste ATENÇÃO
+        console.log("entrou");
+        let passwordValue = this.passwordInput.value;
+        let reviewValue = this.reviewPassInput.value;
+
+        console.log(passwordValue);
+        console.log(reviewValue);
+
+        if (passwordValue != reviewValue) {
+        console.log("entrou if");
+
+            this.alertMessage.style.display = "block";
+            this.reviewPassInput.style.backgroundColor = "rgba(33, 106, 86, 0.2)";
+            this.reviewPassInput.style.borderBottomColor = "#216A56";
+
+            return false;
+        }
+        console.log("passou");
+
         return true;
     }
+
+    VerifyForm() {
+        if(this.VerifyPasswords() == true && this.VerifyAllInputs() == true){
+            return true;
+        }
+
+        else{
+            return false;
+        }
+        // console.log("Verifying form...");
+        // return  this.VerifyPasswords() && this.VerifyAllInputs();
+
+        //PROBELMAS: Se colocar qualquer coisa nas senhas o form vai de arrasta mesmo com campos vazios.
+    }
 }
 
-function VerifyForm(){
-    // event.preventDefault();
-
-    if(VerifyAllInputs() === true && VerifyPasswords() === true){
-        return true;
-    }
-
-    else{
-        return false;
-    }
-}
+let formAction = new FormActions();

@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/cadastro.css">
-    <script type="text/javascript" src="../javascript/NewCadastro.js" defer></script>
+    <script type="text/javascript" src="./assets/javascript/cadastro.js" defer></script>
     <script src="https://kit.fontawesome.com/553722128b.js" crossorigin="anonymous"></script>
     <title>Cadastro</title>
 </head>
@@ -38,7 +38,7 @@
                 <input class="entrada-dados" type="password" id="review-password" name="review-password" placeholder="Digite sua senha">
 
                 <!--AJUSTAR RESPONSIVIDADE (location) OLHO, principalmente nas mensagem de erro-->
-                <img src="../images/olho-fechado.png" id="icone" class="olho" >
+                <img src="./assets/images/olho-fechado.png" id="icone" class="olho" >
 
                 <span id="aviso">*As senhas não correspondem</span>
 
