@@ -15,7 +15,13 @@
             </section>
 
             <section class="form">
-                
+                <form>
+                    <input type="text"  id="inputEmail" name="inputEmail" placeholder="E-mail" required>
+
+                    <input type="password" id="inputPassword" name="inputPassword" placeholder="Senha">
+
+                    <button type="submit">Entrar</button>
+                </form>
             </section>
         </main>
     </section>
