@@ -27,6 +27,7 @@ main {
 }
 
 section.welcome {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +41,7 @@ section.welcome {
 }
 
 section.form {
-
+    margin-top: 2rem;
 
     & form {
         display: flex;
@@ -52,7 +53,19 @@ section.form {
         & input{
             width: 15vw;
             min-width: 230px;
-            height: 30px;
+            /* height: 30px; */
+            outline: 0;
+            /* border-top: none;
+            border-left: none;
+            border-right: none; */
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+
+        & button{
+            padding: 10px 25px;
+            border-radius: 15px;
             outline: 0;
         }
     }
