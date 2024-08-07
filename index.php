@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang=pt-br">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <section class="body">
         <main>
             <section class="welcome">
-                <!-- Colocar logo do Studio, confirmar detalhes da logo, como fundo e espaço em branco se podem ser alterados ou dominuidos -->
+                <img src="./view/assets/images/logo-studio.png">
                 <p class="text-welcome">Bem vindo ao Stima Studio</p>
             </section>
 

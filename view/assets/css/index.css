@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #216A56;
+    --primary-color: #40956A;
 }
 
 *{
@@ -9,18 +9,30 @@
 }
 
 section.body{
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #8FBC8F;
+    background-color: var(--primary-color);
 }
 
 main{
     width: 40vw;
     height: 60vh;
     background-color: white;
+}
+
+section.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & img{
+        width: 10em;
+        height: auto;
+    }
 }
 
 
