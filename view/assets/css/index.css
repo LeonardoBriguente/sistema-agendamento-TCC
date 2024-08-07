@@ -21,6 +21,8 @@ main{
     width: 40vw;
     height: 60vh;
     background-color: white;
+    border-radius: 15px;
+
 }
 
 section.welcome{
@@ -28,9 +30,10 @@ section.welcome{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 5px;
 
     & img{
-        width: 10em;
+        width: 11em;
         height: auto;
     }
 }
