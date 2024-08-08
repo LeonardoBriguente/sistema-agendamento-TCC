@@ -30,7 +30,7 @@
                     <div class="input-box">
                         <i class="fa-solid fa-lock espaco"></i>
                         <input type="password" id="inputPassword" name="inputPassword" placeholder="Senha">
-                        <i class="fa-solid fa-eye-slash eye"></i>
+                        <i class="fa-solid fa-eye-slash eye" id="eye-icon"></i>
                     </div>
 
                     <button type="submit">ENTRAR</button>
