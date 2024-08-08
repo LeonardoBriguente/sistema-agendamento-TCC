@@ -58,7 +58,7 @@ section.form {
         gap: 10px;
 
         & div.input-box{
-            width:
+            width: 15rem;
             display: flex;
             align-items: center;
             border: 2px solid var(--primary-color);
@@ -71,13 +71,20 @@ section.form {
         }
 
         & input{
-            /* width: 100%; */
-            /* min-width: 230px; */
+            width: 100%;
             outline: 0;
             padding: 10px;
             border: none;
             border-radius: 10px;
             font-size: 16px;
+        }
+
+        & i.eye{
+            padding-right: 2px;
+        }
+
+        & i.eye:hover{
+            cursor: pointer;
         }
 
         & button{

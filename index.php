@@ -26,11 +26,10 @@
                         <input type="email" id="inputEmail" name="inputEmail" placeholder="E-mail" required>
                     </div>
 
-                    <!-- Verificar tamanho das Divs -->
                     <div class="input-box">
                         <i class="fa-solid fa-lock espaco"></i>
                         <input type="password" id="inputPassword" name="inputPassword" placeholder="Senha">
-                        <i class="fa-solid fa-eye-slash"></i>
+                        <i class="fa-solid fa-eye-slash eye"></i>
                     </div>
 
                     <button type="submit">ENTRAR</button>
