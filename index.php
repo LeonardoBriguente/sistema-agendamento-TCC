@@ -14,8 +14,8 @@
         <main>
             <section class="welcome">
                 <img src="./view/assets/images/logo-studio.png">
-                <p class="text-welcome">Bem vindo ao Stima Studio</p>
-                <!-- Maybe change P for title =... -->
+                <h2 class="text-welcome">Bem vindo ao Stima Studio</h2>
+                
             </section>
 
             <section class="form">

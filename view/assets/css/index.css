@@ -41,6 +41,10 @@ section.welcome {
         width: 11em;
         height: auto;
     }
+
+     h2.text-welcome{
+        color: var(--second-color);
+     }
 }
 
 section.form {
