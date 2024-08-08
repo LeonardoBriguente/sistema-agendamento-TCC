@@ -48,7 +48,7 @@ section.welcome {
 }
 
 section.form {
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     & form {
         display: flex;
@@ -67,7 +67,7 @@ section.form {
         }
 
         & i.espaco{
-            margin-left: 2px;       
+            margin-left: 9px;       
         }
 
         & input{
@@ -80,7 +80,7 @@ section.form {
         }
 
         & i.eye{
-            padding-right: 2px;
+            padding-right: 9px;
         }
 
         & i.eye:hover{

@@ -1,3 +1,9 @@
 class Usuario{
-    
+    constructor(){
+
+    };
+
+    ModifyEye(){
+        
+    }
 }
