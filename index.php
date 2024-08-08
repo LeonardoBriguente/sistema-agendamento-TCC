@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./view/assets/css/index.css">
     <script src="https://kit.fontawesome.com/553722128b.js" crossorigin="anonymous"></script>
+    <script src="./view/assets/javascript/index.js" defer> </script>
     <title>Bem vindo ao Stima Studio</title>
 </head>
 
