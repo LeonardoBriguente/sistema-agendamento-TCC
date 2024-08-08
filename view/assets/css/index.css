@@ -1,5 +1,6 @@
 :root {
     --primary-color: #40956A;
+    --second-color: #0D3E22;
 }
 
 * {
@@ -22,6 +23,8 @@ main {
     min-width: 350px;
     height: 60vh;
     background-color: white;
+    /* border: 5px solid var(--second-color); */
+    box-shadow: 0 0 5px 2px var(--second-color);
     border-radius: 15px;
 
 }
@@ -32,7 +35,7 @@ section.welcome {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 
     & img {
         width: 11em;
@@ -53,11 +56,8 @@ section.form {
         & input{
             width: 15vw;
             min-width: 230px;
-            /* height: 30px; */
+            border: 2px solid var(--primary-color);
             outline: 0;
-            /* border-top: none;
-            border-left: none;
-            border-right: none; */
             padding: 10px;
             border-radius: 5px;
 
