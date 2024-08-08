@@ -15,16 +15,21 @@
             <section class="welcome">
                 <img src="./view/assets/images/logo-studio.png">
                 <p class="text-welcome">Bem vindo ao Stima Studio</p>
+                <!-- Maybe change P for title =... -->
             </section>
 
             <section class="form">
                 <form>
-                    <div class="email">
-                        <i class="fa-regular fa-envelope"></i>
-                        <input  type="text" id="inputEmail" name="inputEmail" placeholder="E-mail" required>
+                    <div class="input-box">
+                        <i class="fa-regular fa-envelope espaco"></i>
+                        <input type="text" id="inputEmail" name="inputEmail" placeholder="E-mail" required>
                     </div>
 
-                    <input type="password" id="inputPassword" name="inputPassword" placeholder="Senha">
+                    <!-- Verificar tamanho das Divs -->
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock espaco"></i>
+                        <input type="password" id="inputPassword" name="inputPassword" placeholder="Senha">
+                    </div>
 
                     <button type="submit">Entrar</button>
                 </form>

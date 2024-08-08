@@ -53,13 +53,25 @@ section.form {
         flex-direction: column;
         gap: 10px;
 
+        & div.input-box{
+            display: flex;
+            align-items: center;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+
+        }
+
+        & i.espaco{
+            margin-left: 2px;       
+        }
+
         & input{
             width: 15vw;
             min-width: 230px;
-            border: 2px solid var(--primary-color);
             outline: 0;
             padding: 10px;
-            border-radius: 5px;
+            border: none;
+            margin-right: 2px;
 
         }
 
