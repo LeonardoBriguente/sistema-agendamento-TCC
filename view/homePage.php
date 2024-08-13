@@ -10,7 +10,7 @@
 <body>
     <?php
     require_once "../model/database.php";
-    $database = new Database("localhost", "ohiosystem", "root", "");
+    $database = new Database("localhost", "stimastudio", "root", "");
     $conexao = $database->Connect();
     ?>
 </body>
