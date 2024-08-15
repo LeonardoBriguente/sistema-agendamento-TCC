@@ -8,11 +8,7 @@
 </head>
 
 <body>
-    <?php
-    require_once "../model/database.php";
-    $database = new Database("localhost", "stimastudio", "root", "");
-    $conexao = $database->Connect();
-    ?>
+    <!-- Elaborar a agenda utilizando html e css para o calendário. JS pode ser usando para interação com a agenda. Estudar sobre a classe Date do JS-->
 </body>
 
 </html>
