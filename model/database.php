@@ -19,7 +19,7 @@ class Database
     {
         $this->connection = null;
         try {
-            $this->connection = new PDO("msql: host=" . $this->host . "dbname=" . $this->db_name, $this->user, $this->password);
+            $this->connection = new PDO("mysql: host=" . $this->host . "dbname=" . $this->db_name, $this->user, $this->password);
         }
         catch (PDOException $erro) {
             echo "Erro de conexão com o banco " . $erro->getMessage();
