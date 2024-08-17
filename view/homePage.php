@@ -8,6 +8,17 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <!-- IDEIA: Barra lateral esquerda que se sobrepõe a agenda-->
+    </nav>
+
+    <main>
+        <!-- IDEIA: Estruturar a aegdan dentro da Main, ela focara ao lado esquerdo do visor -->
+    </main>
+
+    <section class="diario">
+        <!-- IDEIA: Seção onde os atendimentos do dia selecionado serão exibidos com clareza -->
+    </section>
     <!-- Elaborar a agenda utilizando html e css para o calendário. JS pode ser usando para interação com a agenda. Estudar sobre a classe Date do JS-->
 </body>
 
