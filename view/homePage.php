@@ -12,7 +12,14 @@
         <!-- IDEIA: Barra lateral esquerda que se sobrepõe a agenda-->
     </nav>
 
-    <main>
+    <main class="calendar-conteiner">
+        <section class="controll-calendar">
+            <!-- Botões de seleção do mês -->
+        </section>
+
+        <section class="calendar">
+            <!-- Fazer o cabeçalho dp calendário e criar os elementos restantes usando JS -->
+        </section>
         <!-- IDEIA: Estruturar a aegdan dentro da Main, ela focara ao lado esquerdo do visor -->
     </main>
 
