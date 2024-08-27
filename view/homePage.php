@@ -14,6 +14,7 @@
         <!-- IDEIA: Barra lateral esquerda que se sobrepõe a agenda-->
         <div class="menu-icon" id="menuIcon">
             &#9776; <!-- Ícone de hambúrguer -->
+            <h2>Stima Studio Beauty</h2>
         </div>
 
         <div class="sidebar">

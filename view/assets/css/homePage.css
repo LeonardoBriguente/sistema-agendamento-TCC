@@ -10,7 +10,9 @@
 }
 
 .navbar {
-    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px;
     position: relative;
@@ -28,7 +30,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: var(--primary-color);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
