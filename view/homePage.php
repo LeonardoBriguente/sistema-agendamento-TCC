@@ -4,27 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/553722128b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/homePage.css">
-    <script type="text/javascript" src="./assets/javascript/homePage.js"></script>
+    <!-- <script type="text/javascript" src="./assets/javascript/homePage.js"></script> -->
     <title>Página Inicial</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <!-- IDEIA: Barra lateral esquerda que se sobrepõe a agenda-->
-        <div class="menu-icon" id="menuIcon">
-            &#9776; <!-- Ícone de hambúrguer -->
-            <h2>Stima Studio Beauty</h2>
-        </div>
+    <header class="header">
+        <nav class="navbar">
+            <!-- IDEIA: Barra lateral esquerda que se sobrepõe a agenda-->
+            <div class="menu-icon" id="menuIcon">
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                <h2>Stima Studio Beauty</h2>
+            </div>
+            
+            <div class="sidebar">
+                <ul class="menu">
+                    <li class="topico"><a href="#">Agenda</a></li>
+                    <li class="topico"><a href="#">Perfil</a></li>
+                    <li class="topico"><a href="#">Clientes</a></li>
+                    <li class="topico"><a href="#">Finaceiro</a></li>
+                </ul>
+            </div>
 
-        <div class="sidebar">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-
-
-    </nav>
+        </nav>
+    </header>
 
     <main class="calendar-conteiner">
         <section class="controll-calendar">
