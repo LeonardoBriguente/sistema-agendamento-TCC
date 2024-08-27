@@ -8,3 +8,55 @@
     margin: 0;
     font-family: 'Nunito', sans-serif;
 }
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.content {
+    padding: 20px;
+    transition: margin-left 0.5s;
+}
+
+.content.open {
+    margin-left: 250px; /* Ajuste conforme a largura da barra lateral */
+}
+
+.menu-icon.open {
+    margin-left: 250px; /* Ajuste conforme a largura da barra lateral */
+}
