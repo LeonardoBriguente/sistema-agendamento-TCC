@@ -7,19 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/553722128b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/homePage.css">
-    <!-- <script type="text/javascript" src="./assets/javascript/homePage.js"></script> -->
+    <script type="text/javascript" src="./assets/javascript/homePage.js" defer></script>
     <title>Página Inicial</title>
 </head>
 
 <body>
     <header class="header">
+        <div class="menu-icon" id="menuIcon">
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            <h2><a id="title">Stima Studio Beauty</a></h2>
+        </div>
+        
+        <button class="btn-menu">Menu</button>
+        
         <nav class="navbar">
             <!-- IDEIA: Barra lateral esquerda que se sobrepõe a agenda-->
-             <button class="btn">Menu</button>
-            <div class="menu-icon" id="menuIcon">
-                <!-- <i class="fa-solid fa-bars"></i> -->
-                <h2><a id="title">Stima Studio Beauty</a></h2>
-            </div>
 
             <div class="sidebar">
                 <ul class="menu">

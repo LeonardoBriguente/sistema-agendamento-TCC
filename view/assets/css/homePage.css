@@ -10,21 +10,30 @@
 }
 
 header.header{
+    background-color: var(--primary-color);
     display: flex;
     box-sizing: border-box;
-    height: 2rem;
+    height: 3rem;
 
-    & ul.menu{
+    nav.navbar{
+        display: none;
+    }
+    ul.menu{
         display: flex;
         list-style: none;
         gap: .5rem;
 
-        & li{
+        li{
 
             a{
                 display: block;
                 padding: .5rem;
             }
+        }
+
+        div.sidebar{
+            display: flex;
+            justify-content: center;
         }
     }
 
