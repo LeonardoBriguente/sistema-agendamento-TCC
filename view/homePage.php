@@ -15,11 +15,12 @@
     <header class="header">
         <nav class="navbar">
             <!-- IDEIA: Barra lateral esquerda que se sobrepõe a agenda-->
+             <button class="btn">Menu</button>
             <div class="menu-icon" id="menuIcon">
                 <!-- <i class="fa-solid fa-bars"></i> -->
-                <h2>Stima Studio Beauty</h2>
+                <h2><a id="title">Stima Studio Beauty</a></h2>
             </div>
-            
+
             <div class="sidebar">
                 <ul class="menu">
                     <li class="topico"><a href="#">Agenda</a></li>
@@ -36,10 +37,10 @@
         <section class="controll-calendar">
             <!-- Botões de seleção do mês -->
         </section>
-        <div class="content">
+        <!-- <div class="content">
             <h1>Conteúdo da Página</h1>
             <p>A agenda ou qualquer outro conteúdo estará aqui. A barra lateral se sobrepõe a este conteúdo.</p>
-        </div>
+        </div> -->
 
         <section class="calendar">
             <!-- Fazer o cabeçalho dp calendário e criar os elementos restantes usando JS -->

@@ -12,15 +12,19 @@
 header.header{
     display: flex;
     box-sizing: border-box;
-    height: 2em;
+    height: 2rem;
 
-    ul.menu{
+    & ul.menu{
         display: flex;
         list-style: none;
-        gap: 10px;
+        gap: .5rem;
 
         & li{
 
+            a{
+                display: block;
+                padding: .5rem;
+            }
         }
     }
 
@@ -29,7 +33,7 @@ header.header{
         text-decoration: none;
     }
 
-    & a:hover{
+    & a:hover:not(#title){
         background-color: var(--second-color);
     }
 }
@@ -76,15 +80,15 @@ header.header{
     background-color: #575757;
 } */
 
-.content {
+/* .content {
     padding: 20px;
     transition: margin-left 0.5s;
 }
 
 .content.open {
-    margin-left: 250px; /* Ajuste conforme a largura da barra lateral */
+    margin-left: 250px; 
 }
 
 .menu-icon.open {
-    margin-left: 250px; /* Ajuste conforme a largura da barra lateral */
-}
+    margin-left: 250px; 
+} */
