@@ -9,42 +9,40 @@
     font-family: 'Nunito', sans-serif;
 }
 
-header.header{
+header.header {
     background-color: var(--primary-color);
     display: flex;
     box-sizing: border-box;
     height: 3rem;
+}
 
-    nav.navbar{
-        display: none;
-    }
-    ul.menu{
-        display: flex;
-        list-style: none;
-        gap: .5rem;
+nav.navbar {
+    display: none;
+}
 
-        li{
+ul.menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
 
-            a{
-                display: block;
-                padding: .5rem;
-            }
-        }
+ul.menu li a.link {
+    display: block;
+    padding: .5rem;
+}
 
-        div.sidebar{
-            display: flex;
-            justify-content: center;
-        }
-    }
+div.sidebar {
+    display: flex;
+    justify-content: center;
+}
 
-    & a{
-        color: black;
-        text-decoration: none;
-    }
+header.header a {
+    color: black;
+    text-decoration: none;
+}
 
-    & a:hover:not(#title){
-        background-color: var(--second-color);
-    }
+header.header a:hover:not(#title) {
+    background-color: var(--second-color);
 }
 
 /* .navbar {
