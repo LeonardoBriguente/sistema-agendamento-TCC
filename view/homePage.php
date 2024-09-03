@@ -16,10 +16,10 @@
         <div class="logo-bar">
             <i id="hamburguer" class="fa-solid fa-bars"></i>
 
-            <h2><a id="title">Stima Studio Beauty</a></h2>
+            <h2 class="title" style="justify-self: center;"><a id="title">Stima Studio Beauty</a></h2>
+
         </div>
 
-        <!-- <button class="btn-menu">Menu</button> -->
 
         <nav class="navbar">
             <!-- IDEIA: Barra lateral esquerda que se sobrepõe a agenda-->
