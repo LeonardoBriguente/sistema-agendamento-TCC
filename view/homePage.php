@@ -16,7 +16,7 @@
         <div class="logo-bar">
             <i id="hamburguer" class="fa-solid fa-bars"></i>
 
-            <h2 class="title" style="justify-self: center;"><a href="/view/homePage.php" id="title">Stima Studio Beauty</a></h2>
+            <h2 class="title" style="justify-self: center;"><a href="./homePage.php" id="title">Stima Studio Beauty</a></h2>
 
         </div>
 
@@ -26,7 +26,7 @@
 
             <div class="sidebar">
                 <ul class="menu">
-                    <li class="topico"><a class="link" href="/view/homePage.php">Agenda</a></li>
+                    <li class="topico"><a class="link" href="./homePage.php">Agenda</a></li>
                     <li class="topico"><a href="#">Perfil</a></li>
                     <li class="topico"><a href="#">Clientes</a></li>
                     <li class="topico"><a href="#">Finaceiro</a></li>
