@@ -15,7 +15,7 @@ header.header{
     box-sizing: border-box;
     height: 3rem;
 
-    nav.navbar{
+    & nav.navbar{
         display: none;
     }
     ul.menu{
@@ -23,9 +23,9 @@ header.header{
         list-style: none;
         gap: .5rem;
 
-        li{
+        & li{
 
-            a{
+            & a{
                 display: block;
                 padding: .5rem;
             }
