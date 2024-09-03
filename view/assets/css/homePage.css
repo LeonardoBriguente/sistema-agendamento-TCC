@@ -37,6 +37,10 @@ header.header {
 
         }
 
+        & #hamburguer:hover{
+            cursor: pointer;
+        }
+
         & h2.title {
             position: absolute;
             top: 50%;

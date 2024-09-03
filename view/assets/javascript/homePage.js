@@ -1,8 +1,9 @@
 class Sidebar {
     constructor() {
-        this.sidebar = document.querySelector(".sidebar");
-        this.content = document.querySelector(".content");
-        this.menuIcon = document.querySelector("#menuIcon");
+        // this.sidebar = document.querySelector(".sidebar");
+        this.navbar = document.querySelector(".navbar");
+        this.icon = document.querySelector("#hamburguer");
+        
 
         // this.menuIcon.addEventListener("click", () => this.toggleMenu());
     }
