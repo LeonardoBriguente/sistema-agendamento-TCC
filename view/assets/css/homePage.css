@@ -27,7 +27,7 @@ header.header {
         align-items: center;
         position: relative;
 
-        & #hamburguer{
+        & #hamburguer {
             margin-left: 10px;
             font-size: 1.7rem;
             position: absolute;
@@ -37,7 +37,7 @@ header.header {
 
         }
 
-        & #hamburguer:hover{
+        & #hamburguer:hover {
             cursor: pointer;
         }
 
@@ -51,27 +51,36 @@ header.header {
 
     & nav.navbar {
         /* display: none; */
+        background-color: var(--second-color);
         position: absolute;
-        
-    }
+        top: 3rem;
+        left: 0;
 
-    ul.menu {
-        display: flex;
-        list-style: none;
-        gap: .5rem;
+        & div.sidebar {
+            width:17rem;
 
-        & li {
+            & ul.menu {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
 
-            & a {
-                display: block;
-                padding: .5rem;
+                & li {
+
+                    & a {
+                        display: block;
+                        padding: .5rem;
+                    }
+                }
+
+                & div.sidebar {
+                    display: flex;
+                    justify-content: center;
+                }
             }
         }
 
-        div.sidebar {
-            display: flex;
-            justify-content: center;
-        }
+
     }
 
     & a {
