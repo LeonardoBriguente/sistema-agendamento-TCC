@@ -1,36 +1,31 @@
 class SideBar {
     constructor() {
-        // this.sidebar = document.querySelector(".sidebar");
-        this.navbar = document.querySelector(".navbar");
         this.icon = document.querySelector("#hamburguer");
-        
-        this.Icon.addEventListener("click", () => this.ToggleMenu());
+        this.sidebar = document.querySelector(".sidebar");
+
+        this.icon.addEventListener("click", () => this.ToggleMenu());
     }
 
-    static isOpen = true;
+    static isOpen = false;
 
     ToggleMenu() {
-        if (isOpen == true) {
+        if (SideBar.isOpen) {
             this.closeMenu();
         } else {
             this.openMenu();
         }
+        SideBar.isOpen = !SideBar.isOpen;
     }
 
     openMenu() {
-        this.sidebar.style.width = "250px";
-        this.content.classList.add("open");
-        this.menuIcon.classList.add("open");
+        this.sidebar.classList.add("open");
     }
 
     closeMenu() {
-        this.sidebar.style.width = "0";
-        this.content.classList.remove("open");
-        this.menuIcon.classList.remove("open");
+        this.sidebar.classList.remove("open");
     }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    new SideBar();
+    let start = new SideBar();
 });
-

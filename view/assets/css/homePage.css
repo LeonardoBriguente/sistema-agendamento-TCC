@@ -57,7 +57,20 @@ header.header {
         left: 0;
 
         & div.sidebar {
-            width:17rem;
+            width: 17rem;
+            position: fixed;
+            top: 3rem;
+            left: 0;
+            height: 100%;
+            background-color: var(--second-color);
+            transform: translateX(-100%);
+            /* Inicialmente fora da tela */
+            transition: transform 0.3s ease;
+            /* Transição suave */
+
+            &.open {
+                transform: translateX(17rem);
+            }
 
             & ul.menu {
                 width: 100%;
@@ -66,7 +79,6 @@ header.header {
                 list-style: none;
 
                 & li {
-
                     & a {
                         display: block;
                         padding: .5rem;
@@ -80,7 +92,10 @@ header.header {
             }
         }
 
-
+        div.sidebar.open {
+            transform: translateX(0);
+            /* Move a barra lateral para dentro da tela */
+        }
     }
 
     & a {
