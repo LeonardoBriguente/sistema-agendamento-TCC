@@ -50,7 +50,9 @@ header.header {
     }
 
     & nav.navbar {
-        display: none;
+        /* display: none; */
+        position: absolute;
+        
     }
 
     ul.menu {
