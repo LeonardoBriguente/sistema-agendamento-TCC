@@ -11,15 +11,16 @@
     <title>Página Inicial</title>
 </head>
 
-<body>
+<body style="background-color: purple;">
     <header class="header">
-        <div class="menu-icon" id="menuIcon">
-            <!-- <i class="fa-solid fa-bars"></i> -->
+        <div class="logo-bar">
+            <i id="hamburguer" class="fa-solid fa-bars"></i>
+
             <h2><a id="title">Stima Studio Beauty</a></h2>
         </div>
-        
-        <button class="btn-menu">Menu</button>
-        
+
+        <!-- <button class="btn-menu">Menu</button> -->
+
         <nav class="navbar">
             <!-- IDEIA: Barra lateral esquerda que se sobrepõe a agenda-->
 
