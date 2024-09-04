@@ -51,7 +51,6 @@ header.header {
 
     & nav.navbar {
         /* display: none; */
-        background-color: var(--second-color);
         position: absolute;
         top: 3rem;
         left: 0;
@@ -62,7 +61,7 @@ header.header {
             top: 3rem;
             left: 0;
             height: 100%;
-            background-color: var(--second-color);
+            background-color: var(--primary-color);
             transform: translateX(-100%);
             /* Inicialmente fora da tela */
             transition: transform 0.3s ease;
@@ -79,9 +78,11 @@ header.header {
                 list-style: none;
 
                 & li {
+                    font-size: 1.2rem;
                     & a {
                         display: block;
                         padding: .5rem;
+                        text-align: center;
                     }
                 }
 
