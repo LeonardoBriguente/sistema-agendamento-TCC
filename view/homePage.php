@@ -14,6 +14,7 @@
 <body style="background-color: purple;">
     <header class="header">
         <div class="logo-bar">
+            <!-- IDEIA: Fazer um hambumber animado ao clicar. -->
             <i id="hamburguer" class="fa-solid fa-bars"></i>
 
             <h2 class="title" style="justify-self: center;"><a href="./homePage.php" id="title">Stima Studio Beauty</a></h2>
