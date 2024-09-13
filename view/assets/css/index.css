@@ -12,14 +12,15 @@
 section.body {
     /* width: 100%; */
     height: 100vh;
-    background-image: url(../images/floral-background.png);
+    background-image: url(../images/mandala-background.png);
+    background-color: var(--primary-color);
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
+    background-blend-mode: multiply;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
 }
 
 main {
