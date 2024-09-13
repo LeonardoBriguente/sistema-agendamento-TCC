@@ -5,7 +5,7 @@ class Database
     private $db_name;
     private $user;
     private $password;
-    private $connection;
+    private $pdo;
 
     public function __construct($servidor, $banco, $usuario, $senha)
     {
@@ -17,13 +17,13 @@ class Database
 
     public function Connect()
     {
-        $this->connection = null;
+        $this->pdo = null;
         try {
-            $this->connection = new PDO("mysql: host=" . $this->host . "dbname=" . $this->db_name, $this->user, $this->password);
+            $this->pdo = new PDO("mysql: host=" . $this->host . "dbname=" . $this->db_name, $this->user, $this->password);
         }
         catch (PDOException $erro) {
             echo "Erro de conexão com o banco " . $erro->getMessage();
         }
-        return $this->connection;
+        return $this->pdo;
     }
 }

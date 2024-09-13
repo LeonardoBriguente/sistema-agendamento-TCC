@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Formulário de Cadastro de Colaborador</h2>
-    <form action="processa_colaborador.php" method="POST">
+    <form action="/controller/colabController.php" method="POST">
         <label for="nome">Nome*:</label><br>
         <input type="text" id="nome" name="nome" required><br><br>
 
