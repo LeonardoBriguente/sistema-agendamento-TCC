@@ -8,3 +8,5 @@ class ColabController{
         $this->colaboradorModel = new Colaborador();
     }
 }
+
+// Fazer a validação dao Forms here
