@@ -4,6 +4,7 @@ require_once "./database.php";
 class Colaborador
 {
     private $pdo;
+    private $id;
 
     public function __construct()
     {
