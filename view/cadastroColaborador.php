@@ -14,6 +14,9 @@
         <label for="logradouro">Logradouro*:</label><br>
         <input type="text" id="logradouro" name="logradouro" required><br><br>
 
+        <label for="numero_residencia">Número da Residência*:</label><br>
+        <input type="text" id="numero_residencia" name="numero_residencia" required><br><br>
+
         <label for="data_nascimento">Data de Nascimento*:</label><br>
         <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
 
