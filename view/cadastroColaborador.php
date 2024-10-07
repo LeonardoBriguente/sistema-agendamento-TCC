@@ -8,6 +8,8 @@
 <body>
     <h2>Formulário de Cadastro de Colaborador</h2>
     <form action="/controller/colabController.php" method="POST">
+        <input type="hidden" name="acao" value="cadastrar">
+        
         <label for="nome">Nome*:</label><br>
         <input type="text" id="nome" name="nome" required><br><br>
 
