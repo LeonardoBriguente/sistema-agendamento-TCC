@@ -4,8 +4,9 @@ require_once "./database.php";
 class Colaborador {
     private $pdo;
 
-    public function __construct($pdo) {
-        $this->pdo = $pdo;
+    public function __construct() {
+        $database = new Database("localhost", "stimastudio", "root", "");
+        $this->pdo = $database->Connect();
     }
 
     public function AddColaborador($nome, $logradouro, $numero_residencia, $data_nascimento, $bairro, $cidade, $cpf, $telefone, $email, $complemento) {
