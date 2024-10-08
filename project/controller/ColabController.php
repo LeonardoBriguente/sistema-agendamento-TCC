@@ -10,11 +10,12 @@ class ColabController {
 
     // Função para cadastrar colaborador
     public function CadastrarColaborador($dados) {
-
+        // Validação básica dos dados
         if (!isset($dados['nome'], $dados['logradouro'], $dados['numero_residencia'], $dados['data_nascimento'], $dados['bairro'], $dados['cidade'], $dados['cpf'], $dados['telefone'], $dados['email'])) {
             return "Por favor, preencha todos os campos obrigatórios.";
         }
 
+        // Chamar o método do model para cadastrar no banco de dados
         $resultado = $this->colaboradorModel->AddColaborador(
             $dados['nome'],
             $dados['logradouro'],
