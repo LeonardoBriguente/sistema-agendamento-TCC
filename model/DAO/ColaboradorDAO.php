@@ -1,6 +1,7 @@
 <?php
 //DAO lida com as requisições do banco.
-require_once "database.php";
+require_once __DIR__ . '/../database.php';
+
 
 class ColaboradorDAO {
     private $pdo;
