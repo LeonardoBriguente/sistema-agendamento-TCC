@@ -40,23 +40,25 @@ class ColaboradorDAO {
             $stmt->execute();
 
             // Envia o e-mail para o colaborador com o link para criar a senha
-            $this->sendPasswordCreationEmail($email, $token);
+            // $this->sendPasswordCreationEmail($email, $token);
 
             return "Colaborador adicionado com sucesso! E-mail enviado para criação de senha.";
-        } catch (PDOException $e) {
-            return "Erro ao adicionar colaborador: " . $e->getMessage();
+        }
+        catch(Exception $erro){
+            error_log($erro->getMessage());
+            echo "Erro ao cadastrar colaborador,  tente novamente mais tarde.";
         }
     }
 
-    private function sendPasswordCreationEmail($email, $token) {
-        $link = "https://seusite.com/definir_senha.php?token=" . $token;
+    // private function sendPasswordCreationEmail($email, $token) {
+    //     $link = "https://seusite.com/definir_senha.php?token=" . $token;
 
-        $subject = "Criação de Senha de Acesso";
-        $message = "Olá, por favor, crie sua senha através do link abaixo:\n\n" . $link;
-        $headers = "From: noreply@seusite.com";
+    //     $subject = "Criação de Senha de Acesso";
+    //     $message = "Olá, por favor, crie sua senha através do link abaixo:\n\n" . $link;
+    //     $headers = "From: noreply@seusite.com";
 
-        // Função mail nativa do PHP para envio de e-mail
-        mail($email, $subject, $message, $headers);
-    }
+    //     // Função mail nativa do PHP para envio de e-mail
+    //     mail($email, $subject, $message, $headers);
+    // }
 }
 
