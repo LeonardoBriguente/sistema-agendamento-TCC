@@ -1,5 +1,5 @@
 <?php
-require_once "../model/colaborador.php";
+require_once "../model/Colaborador.php";
 
 class ColabController {
     private $colaboradorModel;

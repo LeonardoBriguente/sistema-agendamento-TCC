@@ -14,12 +14,12 @@ class ColaboradorDAO {
     public function InserirColaborador($nome, $logradouro, $numero_residencia, $data_nascimento, $bairro, $cidade, $cpf, $telefone, $email, $complemento) {
         try {
             // Gera um token único para a criação de senha
-            $token = bin2hex(random_bytes(16)); // Token aleatório
-            $token_expiracao = (new DateTime())->modify('+20 minutes')->format('Y-m-d H:i:s'); // Expira em 20 minutos
+            // $token = bin2hex(random_bytes(16)); // Token aleatório
+            // $token_expiracao = (new DateTime())->modify('+20 minutes')->format('Y-m-d H:i:s'); // Expira em 20 minutos
 
             // Prepara a consulta SQL
-            $sql = "INSERT INTO colaborador (nome, logradouro, numero_residencia, data_nascimento, bairro, cidade, cpf, telefone, email, complemento, token_senha, token_expiracao)
-                    VALUES (:nome, :logradouro, :numero_residencia, :data_nascimento, :bairro, :cidade, :cpf, :telefone, :email, :complemento, :token_senha, :token_expiracao)";
+            $sql = "INSERT INTO colaborador (nome, logradouro, numero_residencia, data_nascimento, bairro, cidade, cpf, telefone, email, complemento)
+                    VALUES (:nome, :logradouro, :numero_residencia, :data_nascimento, :bairro, :cidade, :cpf, :telefone, :email, :complemento)";
 
             $stmt = $this->pdo->prepare($sql);
 
@@ -34,8 +34,8 @@ class ColaboradorDAO {
             $stmt->bindParam(':telefone', $telefone);
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':complemento', $complemento);
-            $stmt->bindParam(':token_senha', $token);
-            $stmt->bindParam(':token_expiracao', $token_expiracao);
+            // $stmt->bindParam(':token_senha', $token);
+            // $stmt->bindParam(':token_expiracao', $token_expiracao);
 
             // Executa a consulta
             $stmt->execute();
