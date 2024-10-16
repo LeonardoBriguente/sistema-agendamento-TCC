@@ -12,6 +12,7 @@ class ColaboradorDAO {
     }
 
     public function InserirColaborador($nome, $logradouro, $numero_residencia, $data_nascimento, $bairro, $cidade, $cpf, $telefone, $email, $complemento) {
+        $result = true;
         try {
             // Gera um token único para a criação de senha
             // $token = bin2hex(random_bytes(16)); // Token aleatório
@@ -43,12 +44,13 @@ class ColaboradorDAO {
             // Envia o e-mail para o colaborador com o link para criar a senha
             // $this->sendPasswordCreationEmail($email, $token);
 
-            return "Colaborador adicionado com sucesso! E-mail enviado para criação de senha.";
         }
         catch(Exception $erro){
             error_log($erro->getMessage());
-            echo "Erro ao cadastrar colaborador,  tente novamente mais tarde.";
+            // echo "Erro ao cadastrar colaborador,  tente novamente mais tarde.";
+            $result = false;
         }
+        return $result;
     }
 
     // private function sendPasswordCreationEmail($email, $token) {

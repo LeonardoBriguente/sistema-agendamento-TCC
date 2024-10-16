@@ -42,14 +42,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['acao'])) {
     switch ($_POST['acao']) {
         case 'cadastrar':
             $resultado = $controller->CadastrarColaborador($_POST);
+
+            if($resultado == true){
+                echo $resultado;
+            }
             break;
 
 
         // Adicione mais casos conforme necessário
         default:
-            $resultado = "Ação não reconhecida.";
+            $resultado = "false";
             break;
     }
-
     echo $resultado;
 }
