@@ -9,10 +9,11 @@ class Colaborador {
         $this->dao = new ColaboradorDAO();
     }
 
-    public function AddColaborador($nome, $logradouro, $numero_residencia, $data_nascimento, $bairro, $cidade, $cpf, $telefone, $email, $complemento) {
+    public function AddColaborador(ColaboradorVO $colaboradorVO) {
+        
         
         // try{
-            $result = $this->dao->InserirColaborador($nome, $logradouro, $numero_residencia, $data_nascimento, $bairro, $cidade, $cpf, $telefone, $email, $complemento); //Deixar funcionando
+            $result = $this->dao->InserirColaborador($colaboradorVO); //Deixar funcionando
         // }
         // catch(Exception $erro){
             // error_log($erro->getMessage());
